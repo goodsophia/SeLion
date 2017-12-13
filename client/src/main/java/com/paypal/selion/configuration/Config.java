@@ -51,9 +51,9 @@ import com.paypal.selion.platform.html.support.events.ElementEventListener;
  *
  * <pre>
  * &lt;!-- If parameter is empty string or omitted, please see defaults --&gt;
- * 
+ *
  * &lt;!-- SELENIUM CONFIGURATION --&gt;
- * 
+ *
  * &lt;!-- optional, defaults to "" or localhost when runLocally is true (GLOBAL) --&gt;
  * &lt;parameter name="seleniumhost" value="" /&gt;
  * &lt;!-- optional, defaults to 4444 (GLOBAL) --&gt;
@@ -66,9 +66,9 @@ import com.paypal.selion.platform.html.support.events.ElementEventListener;
  * &lt;parameter name="autoScreenShot" value="true" /&gt;
  * &lt;!-- optional, used when runLocally is true, defaults to 'default' --&gt;
  * &lt;parameter name="profileName" value="SeleniumProfile" /&gt;
- * 
+ *
  * &lt;!-- SELION FILES LOCATION --&gt;
- * 
+ *
  * &lt;!-- optional, default to selionFiles (GLOBAL) --&gt;
  * &lt;parameter name="basedir" value=""  /&gt;
  * &lt;!-- optional, default to ${selionFiles.basedir}/selionLogs (GLOBAL) --&gt;
@@ -671,6 +671,12 @@ public final class Config {
          * Default is set to <b>120000</b>
          */
         EXECUTION_TIMEOUT("executionTimeout", "120000", false),
+
+        /**
+         * test container specified by user.<br>
+         * Default is set to <b>mafengwo</b>， e.g: URL is https://www.mafengwo.cn
+         */
+        CONTAINER("container", "mafengwo", false),
 
         /**
          * Automatically attempt to download various webdriver dependencies (chromedriver, etc) if they are not

@@ -67,13 +67,10 @@
     </repositories>
 
     <distributionManagement>
-        <repository>
-            <id>sonatype-nexus-staging</id>
-            <url>http://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-        </repository>
         <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <id>snapshots</id>
+            <name>Nexus Snapshot Repository</name>
+            <url>http://172.18.20.145:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
