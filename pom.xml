@@ -70,7 +70,7 @@
         <snapshotRepository>
             <id>snapshots</id>
             <name>Nexus Snapshot Repository</name>
-            <url>http://172.18.20.145:8081/repository/maven-snapshots/</url>
+            <url>http://nexus.mfwdev.com/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
